@@ -42,7 +42,5 @@
     "next": "~14.0.4",
     "vercel": "~32.4.1"
   },
-  "packageManager": "yarn@3.2.3",
-  "dependencies": {
-  }
+  "packageManager": "yarn@3.2.3"
 }
