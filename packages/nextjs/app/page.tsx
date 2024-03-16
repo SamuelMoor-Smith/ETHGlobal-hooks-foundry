@@ -4,6 +4,7 @@ import Link from "next/link";
 import type { NextPage } from "next";
 import { useAccount } from "wagmi";
 import { BugAntIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
+import AddLiquidity from "~~/components/extra/AddLiquidity";
 import { Address } from "~~/components/scaffold-eth";
 import { Balance } from "~~/components/scaffold-eth";
 
@@ -30,6 +31,7 @@ const Home: NextPage = () => {
             <p className="my-2 font-medium">Liquidity Pool Distribution:</p>
             <Balance address={connectedAddress} />
           </div>
+
           {/* <p className="text-center text-lg">
             Get started by editing{" "}
             <code className="italic bg-base-300 text-base font-bold max-w-full break-words break-all inline-block">
@@ -47,6 +49,8 @@ const Home: NextPage = () => {
             </code>
           </p> */}
         </div>
+
+        <AddLiquidity />
 
         <div className="flex-grow bg-base-300 w-full mt-16 px-8 py-12">
           <div className="flex justify-center items-center gap-12 flex-col sm:flex-row">
