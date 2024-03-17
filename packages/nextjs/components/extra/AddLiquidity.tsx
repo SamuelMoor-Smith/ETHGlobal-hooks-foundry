@@ -1,5 +1,6 @@
+'use client';
+
 import React from "react";
-import "daisyui";
 
 // Mock props for demonstration
 const props = {
